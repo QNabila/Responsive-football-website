@@ -126,8 +126,6 @@ body {
   margin: 80px 0 40px 0;
 }
 
-
-
 /* footer style */
 footer {
   display: flex;
@@ -141,9 +139,9 @@ footer {
   justify-content: center;
   margin-top: 20px;
 }
-.social-icons a{
-  padding:0 10px;
-  color: #E7E7E8;
+.social-icons a {
+  padding: 0 10px;
+  color: #e7e7e8;
   height: 32px;
   width: 32px;
 }
@@ -168,6 +166,18 @@ footer {
     margin-top: 20px;
     font-size: 32px;
     margin-left: 15px;
+  }
+
+  .banner-container:hover .banner-img {
+    width: 70%;
+    transform: rotate(20deg);
+  }
+  .banner-container .banner-img {
+    transition: transform 0.5s linear;
+  }
+  .banner-container:hover .banner-title h3 {
+    transform: rotate(-35deg) translate(-30px, -300px) scale(0.5);
+    transform-origin: bottom;
   }
 
   .banner-img img,
